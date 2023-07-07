@@ -9,3 +9,4 @@ Go to the root directory `..\GitSearch` and run `ng serve` for a dev server. Nav
 ### Description
 
 A simple search engine with the github API using the languages HTML, CSS, TYPESCRIPT, JSON with the framework ANGULAR
+The search is limited to 30 repositories per time, write exactly as the name of the desired repository is written.
