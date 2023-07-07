@@ -21,8 +21,8 @@
                         <p> {{rep.updated_at}}</p>
                     </span>
                     <mat-card-actions class="actions">
-                        <a color="primary" class="teste" [href]="rep.owner.html_url" target="_blank">User</a>
-                        <a color="primary" class="teste" [href]="rep.html_url" target="_blank">Repo</a>
+                        <a color="primary" class="botao-link" [href]="rep.owner.html_url" target="_blank">User</a>
+                        <a color="primary" class="botao-link" [href]="rep.html_url" target="_blank">Repo</a>
                         <mat-icon [matBadge]="rep.forks_count" matBadgeColor="primary" svgIcon="git-fork"></mat-icon>
                         <mat-icon [matBadge]="rep.watchers" matBadgeColor="primary">visibility</mat-icon>
                         <mat-icon [matBadge]="rep.stargazers_count" matBadgeColor="primary">star_half</mat-icon>
