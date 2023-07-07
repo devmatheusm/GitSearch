@@ -1,0 +1,21 @@
+<body>
+    <mat-toolbar class="toolbar" >
+        <div class="titulo">
+            <mat-icon class="code-icon" svgIcon="git-search"></mat-icon><h1>GitSearch</h1>
+        </div>
+        <form class="form" (ngSubmit)="GetRepos()">
+            <mat-form-field ngClass="input-search">
+                <mat-label>Search repositories</mat-label>
+                <input [(ngModel)]="githubRepoSearch" name="repository" matInput #message maxlength="256" placeholder="Ex. GitSearch..">
+            </mat-form-field>
+            <button type="submit" class="button-search" mat-raised-button color="primary">Search<mat-icon>search</mat-icon></button>
+        </form>
+    </mat-toolbar>
+    <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+        <app-git-hub-repos [gitRepositorio]="repositorio"></app-git-hub-repos>
+    <footer>
+        <div class="footer">
+            <p>Desenvolvido por <a href="https://github.com/SirIllumiGot" class="ref-m">Matheus M. Morais</a></p>
+        </div>
+    </footer>
+</body>

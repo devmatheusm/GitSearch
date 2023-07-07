@@ -1,0 +1,41 @@
+<div class="container">
+    <ul class="card">
+        <li *ngFor="let rep of pageSlice" class="lista">
+            <mat-card tabindex="-1">
+                <mat-card-header>
+                    <img mat-card-avatar src="{{rep.owner.avatar_url}}" alt="GitHub pfp">
+                    <mat-card-title class="titulo"><h2>Usuario:ﾠ</h2><a [href]="rep.owner.html_url">{{rep.owner.login}}</a></mat-card-title>
+                    <mat-card-subtitle class="subtitulo"><h2>Projeto:ﾠ</h2><a [href]="rep.html_url">{{rep.name}}</a></mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="content">
+                    <h2>description:</h2>
+                    <p>{{rep.description}}</p>
+                </mat-card-content>
+                <mat-card-footer>
+                    <span class="git-create">
+                        <h2>created at:ﾠ</h2> 
+                        <p>{{rep.created_at}}</p>
+                    </span>
+                    <span class="git-upd">
+                        <h2>updated at:ﾠ</h2>
+                        <p> {{rep.updated_at}}</p>
+                    </span>
+                    <mat-card-actions class="actions">
+                        <a color="primary" class="teste" [href]="rep.owner.html_url" target="_blank">User</a>
+                        <a color="primary" class="teste" [href]="rep.html_url" target="_blank">Repo</a>
+                        <mat-icon [matBadge]="rep.forks_count" matBadgeColor="primary" svgIcon="git-fork"></mat-icon>
+                        <mat-icon [matBadge]="rep.watchers" matBadgeColor="primary">visibility</mat-icon>
+                        <mat-icon [matBadge]="rep.stargazers_count" matBadgeColor="primary">star_half</mat-icon>
+                        <mat-icon [matBadge]="rep.open_issues" matBadgeColor="primary" svgIcon="git-issue"></mat-icon>
+                    </mat-card-actions>
+                </mat-card-footer>
+            </mat-card>
+        </li>
+    </ul>
+    <mat-paginator 
+    [length]="slicedItems.length"
+    [pageSizeOptions]="[4, 8, 12]" 
+    aria-label="Select page"
+    (page)="OnPageChange($event)">
+    </mat-paginator>    
+</div>
