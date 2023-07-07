@@ -30,12 +30,14 @@
     }
 
     .titulo{
-        display: flex-start;
+        display: flex;
+        justify-content: start;
         align-items: baseline;
     }
 
     .subtitulo{
-        display: flex-start;
+        display: flex;
+        justify-content: start;
         align-items: baseline;
         margin: 0 0 20px 0;
         color: white;
@@ -60,6 +62,11 @@
         display: flex;
         align-items: baseline;
         margin: 10px 0 0 20px;
+    }
+
+    mat-card-header img{
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -115,7 +122,8 @@
     }
 
     .subtitulo{
-        display: flex-start;
+        display: flex;
+        justify-content: start;
         align-items: baseline;
         margin: 0 0 20px 0;
         color: white;
@@ -154,6 +162,11 @@
     {
        font-size: small; 
     }
+    
+    mat-card-header img{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 320px){
@@ -174,6 +187,7 @@
         font-size: small;
     }
 }
+
 
 
 mat-card{
