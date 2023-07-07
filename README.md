@@ -8,4 +8,4 @@ Go to the root directory `..\GitSearch` and run `ng serve` for a dev server. Nav
 
 ### Description
 
-A simple search engine with the github API using the languages HTML, CSS, TYPESCRIPT, ANGULAR, JSON
+A simple search engine with the github API using the languages HTML, CSS, TYPESCRIPT, JSON with the framework ANGULAR
