@@ -30,14 +30,12 @@
     }
 
     .titulo{
-        display: flex;
-        justify-content: start;
+        display: flex-start;
         align-items: baseline;
     }
 
     .subtitulo{
-        display: flex;
-        justify-content: start;
+        display: flex-start;
         align-items: baseline;
         margin: 0 0 20px 0;
         color: white;
@@ -117,8 +115,7 @@
     }
 
     .subtitulo{
-        display: flex;
-        justify-content: start;
+        display: flex-start;
         align-items: baseline;
         margin: 0 0 20px 0;
         color: white;
